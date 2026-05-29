@@ -19,8 +19,9 @@ const spans = document.querySelectorAll("#play span");
 console.log(spans);
 
 for (const mySpan of spans){
-        mySpan.style.backgroundColor ="pink";
+       // mySpan.style.backgroundColor ="pink";
         let actor = mySpan.dataset.actor;
-        alert(actor);
-
+        mySpan.addEventListener("click",function(ev){
+                alert("I'm " + actor)
+        });
 }
